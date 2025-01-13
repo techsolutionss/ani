@@ -1,0 +1,220 @@
+.banner .item .slider-1{
+    background-image: url(../image/slider-a4.jpg);
+}
+.banner .item .slider-2{
+    background-image: url(../image/slider-d4.jpg);
+}
+.banner .item .slider-3{
+    background-image: url(../image/slider-a1.jpg);
+}
+
+html, body {
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+body {background:#f9f9f9; font-size:13px; line-height:20px; font-family:"Montserrat", Arial, sans-serif; color:#555; font-weight: 400;}
+
+h1, h2, h3, h4, h5, h6 {color:#333;}
+h3 {font-size:22px;}
+h4 {font-size: 18px;}
+
+h1, h2, h3 {margin-top: 20px;margin-bottom: 10px;}
+
+.main_title {text-align:center; font-size:16px; margin-bottom:30px;}
+.main_title h2 {text-transform: uppercase; font-weight:700; letter-spacing:-1px; font-size:30px; margin-bottom:0;margin-top:0; }
+
+.navbar-toggle {
+    float: left;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    padding: 10px 12px;
+    background-color: #2580fe
+}
+
+/* .navbar-nav li a {
+    padding: 12px 10px;
+    font-size: 14px;
+    font-weight: 400;
+    color: red
+} */
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media only screen and (max-width: 767px) {
+    .container {
+        padding-left: zpx;
+        padding-right: 30px;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .header-s1 .navbar-nav li a {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}
+
+.header-s1 .navbar-nav>li>a {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-left: 30px;
+}
+.navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* line-height: 20px; */
+}
+
+.nav>li>a {
+    position: relative;
+    display: block;
+    /* padding: 10px 15px; */
+}
+@media only screen and (max-width: 767px) {
+    .navbar-nav li a {
+        /* padding: 12px 10px; */
+        font-size: 14px;
+        font-weight: 400;
+        color: #2580fe;
+    }
+}
+@media only screen and (max-width: 1199px) {
+    .navbar-nav>li>a {
+        font-size: 13px;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+.navbar-nav>li>a {
+    background: transparent;
+    text-transform: uppercase;
+    color: inherit;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    /* line-height: 10px; */
+    /* padding: 6px 8px; */
+}
+a:link, a:visited {
+    text-decoration: none;
+}
+a {
+    color: #337ab7;
+    text-decoration: none;
+}
+a {
+    background-color: transparent;
+}
+a {
+    outline: 0;
+    transition: all 0.5s;
+    color: #2580fe;
+}
+ul li, ol li {
+    list-style: none;
+}
+@media only screen and (max-width: 767px) {
+    .header-s1 .navbar-collapse {
+        margin: 0;
+        background-color: #fff;
+        color: #2580fe;
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .container {
+        padding-left: 30px;
+        padding-right: 30px;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .header-s1 .navbar-nav li a {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}
+.header-s1 .navbar-nav li a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    /* padding-right: 10px;n */
+}
+@media only screen and (max-width: 767px) {
+    .navbar-nav li a {
+        padding: 8px 6px;
+        font-size: 14px;
+        font-weight: 400;
+        color: #2580fe;
+    }
+}
+@media only screen and (max-width: 1199px) {
+    .navbar-nav li a {
+        font-size: 13px;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+.navbar-nav li a {
+    background: transparent;
+    text-transform: uppercase;
+    color: inherit;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    padding: 14px 16px;
+}
+
+.navbar-nav li a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 20px;
+}
+.nav li a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+a:link, a:visited {
+    text-decoration: none;
+}
+a {
+    outline: 0;
+    transition: all 0.5s;
+    color: #2580fe;
+}
+
+
+.header-s1 .navbar {
+    padding: 0;
+}
+.site-header .navbar {
+    border-radius: 0;
+    border: 0 none;
+    min-width: 300px;
+    padding: 12px 0 0;
+    color: #36454e;
+    background: #fff;
+    margin: 0;
+    z-index: 9;
+}
+.navbar {
+    position: relative;
+    min-height: 100px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+}

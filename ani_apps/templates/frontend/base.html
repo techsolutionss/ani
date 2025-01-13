@@ -1,0 +1,64 @@
+{% load static i18n %}<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %}
+        <title>{% block page_title %} American Insurance Agency {% endblock %}{{ site.name }}</title>
+    {% endblock %}
+    {% block metas %}
+        <meta name="description" content="{% block meta_descrition %}{% trans "Americanationalinsurance." %}{% endblock %}">
+        <meta name="keywords" content="{% block page_meta_keywords %} {% trans "American national insurance" %} {% endblock %}">
+        <meta name="author" content="Americanationalinsurance">
+
+        {% block meta_social %}
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="{{ request.scheme }}://{{ request.get_host }}{{ request.get_full_path }}">
+        <meta property="og:title" content="{% block meta_og_title %}{{ site.name }}{% endblock %}">
+        <meta property="og:description" content="{% block meta_og_description %}{% trans " american national insurance" %}{% endblock %}">
+        {% comment %}<meta property="og:image" content="{% block meta_og_image %}{{ request.scheme }}://{{ request.get_host }}{% static 'frontend/img/placeholder_800x533.png' %}{% endblock %}">{% endcomment %}
+        <meta property="og:locale" content="en">
+        <meta property="og:site_name" content="{{ site.name }}">
+        <meta name="twitter:card" content="summary"/>
+        <meta name="twitter:site" content=""/>
+        <meta name="twitter:creator" content=""/>
+        {% endblock %}
+
+        {% block extra_metas %}
+        {% endblock %}
+    {% endblock metas %}
+
+ 
+    <!-- GOOGLE WEB FONT -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3e04c5a057.js" crossorigin="anonymous"></script>
+    <!-- COMMON CSS -->
+    <link href="{% static 'frontend/css/style.css' %}" rel="stylesheet">
+    <link href="{% static 'frontend/css/vendor.bundle.css' %}" rel="stylesheet">
+    <link href="{% static 'frontend/css/custom.css' %}" rel="stylesheet">
+
+    {% block extra_css %}
+     
+    {% endblock %}
+    {% block extra_head %}{% endblock %}
+</head>
+<body class="site-body style-v1">
+    <div class="layer"></div>
+
+    {% block header_navigation %}
+        {% include 'frontend/layouts/header_navigation.html' %}
+    {% endblock %}
+    {% block hero_in %}{% endblock %}
+    {% block breadcrumb %}{% endblock %}
+    {% block content %}{% endblock %}
+    {% block footer %}
+        {% include 'frontend/layouts/footer.html' %}
+    {% endblock %}
+	  <script src="{% static 'frontend/js/jquery.bundle.js' %}"></script>
+	  <script src="{% static 'frontend/js/script.js' %}"></script>
+    {% block extra_js %}
+    {% endblock %}
+</body>
+</html>
