@@ -1,0 +1,132 @@
+{% extends "frontend/base.html" %}
+{% load static  %}
+
+{% block extra_css %}
+ 
+{% endblock %}
+
+{% block content %}
+
+    <!-- Banner -->
+    <div class="banner banner-static has-bg no-filter">
+        <div class="banner-cpn">
+            <div class="container">
+                <div class="content row">
+
+                    <div class="banner-text dark">
+                        <h1 class="page-title">Contact Insurify</h1>
+                        <p class="lead">Want to work with us or need more details about adipicing elit ncidut labore dolor unde omnis iste.</p>
+                    </div>
+                    <div class="banner-sider">
+                        <div class="boxed boxed-p">
+                            <p>The <strong>Insurify</strong> makes it easy to get any kind of insurance quote online.</p>
+                            <a href="get-a-quote.html" class="btn-link link-arrow">Start Quote</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="banner-bg-5 imagebg-5">
+            <img src="{% static 'frontend/image/banner-contact.jpg' %}" alt=""/>
+        </div>
+    </div>
+    <!-- End Banner -->
+    <!-- End Header -->
+
+    <!-- Content -->
+    <div class="section section-contents section-contact section-pad">
+    <div class="container">
+        <div class="content row">
+
+            <div class="contact-content row">
+                <div class="drop-message col-md-8 pad-r res-m-bttm">
+                    <h2>Contact Information</h2>
+                    <div class="row">
+                        <div class="col-sm-5 res-s-bttm-sm">
+                            <p><strong>Insurify Inc.</strong><br>
+                            34 South Franklin Road <br>Santa Ana, CA 8975, USA.</p>
+                        </div>
+                        <div class="col-sm-4 res-s-bttm-sm">
+                            <p><strong>Contact Number</strong> <br>
+                            Phone: 781-123-9865<br>
+                            Toll Free: 800-123-5689</p>
+                        </div>
+                        <div class="col-sm-3">
+                            <p><strong>Office Hours</strong><br>
+                            Monday-Friday<br>
+                            8:30am-5:00pm</p>
+                        </div>
+                    </div>
+                    <div class="gaps size-lg"></div>
+                    <div class="clear"></div>
+                    <h4>Complete and submit the form below -</h4>						
+                    <form id="quote-contact-request" class="form-message" action="https://demo.themenio.com/insurify/form/contact.php" method="post">
+                        <div class="form-results"></div>
+                        <div class="form-group row">
+                            <div class="form-field col-md-6 form-m-bttm">
+                                <input name="contact-name" type="text" placeholder="Name *" class="form-control required">
+                            </div>
+                            <div class="form-field col-md-6">
+                                <input name="contact-email" type="email" placeholder="Email *" class="form-control required email">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="form-field col-md-6 form-m-bttm">
+                                <input name="contact-phone" type="text" placeholder="Phone *" class="form-control required">
+                            </div>
+                            <div class="form-field col-md-6">
+                                <input name="contact-cell" type="text" placeholder="Cell Phone" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="form-field col-md-6 form-m-bttm">
+                                <input name="contact-address" type="text" placeholder="Address" class="form-control">
+                            </div>
+                            <div class="form-field col-md-6">
+                                <input name="contact-citystate" type="text" placeholder="City, State, Zip" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="form-field col-md-6 form-m-bttm">
+                                <input name="contact-service" type="text" placeholder="Type of Product Interest" class="form-control">
+                            </div>
+                            <div class="form-field col-md-6">
+                                <input name="contact-besttime" type="text" placeholder="Best time to reach" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="form-field col-md-12">
+                                <textarea name="contact-message" placeholder="Messages / Question *" class="txtarea form-control required"></textarea>
+                            </div>
+                        </div>
+                        <input type="text" class="hidden" name="form-anti-honeypot" value="">
+                        <button type="submit" class="btn solid-btn sb-h">Submit</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <!-- End Content -->
+
+    <!-- Call Action -->
+    <div class="call-action bg-primary">
+    <div class="cta-block">
+        <div class="container">
+            <div class="content row">
+
+                <div class="cta-sameline">
+                    <h3>Commercial Insurance / Personal Insurance</h3>
+                    <p>Don't wait until it's too late. Contact for all of your personal and commercial insurance.</p>
+                    <a class="btn btn-outline" href="get-a-quote.html">Get A Quote</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+{% endblock %}

@@ -24,12 +24,12 @@
         <nav class="navbar-collapse collapse" id="mainnav">
             <ul class="nav navbar-nav">
                 <li>
-                    <a href="">Home</a>
+                    <a href="{% url 'anipages:home' %}">Home</a>
                 </li>
                 <li>
-                    <a href="insurance-services.html">Insurance Services</a>
+                    <a href="{% url 'anipages:insurance' %}">Insurance Services</a>
                 </li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="{% url 'anipages:contacts' %}">Contact</a></li>
             </ul>
         </nav>
     </div>

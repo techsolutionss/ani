@@ -93,8 +93,8 @@
 								<br><strong>Save up 16%</strong>.</h3>
 								<a href="#" class="btn-link">Learn about homeowners</a>
 							</div>
-							<div class="imagebg">
-								<img src="{% static 'frontend/image/photo-md-o.jpg' %}" alt="">
+							<div class="imagebg-3ft">
+								<img src="{% static 'frontend/image/photo.jpg' %}" alt="">
 							</div>
 						</div>
 					</div>
@@ -105,7 +105,7 @@
 								<h3>Protecting <strong>Auto + Property</strong> <br> <strong>Insurance</strong> now you could <br><strong>Save 5% extra.</strong></h3>
 								<a href="#" class="btn-link">Learn about personal</a>
 							</div>
-							<div class="imagebg">
+							<div class="imagebg-3ft">
 								<img src="{% static 'frontend/image/photo-md-p.jpg' %}" alt="">
 							</div>
 						</div>
@@ -147,7 +147,7 @@
 					<h3 class="mb-x1">How Much Life Insurance Do I Need?</h3>
 					<p>Find the life insurance coverage that best fits your needs.</p>
 					<span class="gaps size-sm"></span>
-					<a href="#" class="btn btn-light">Get Started</a>
+					<a href="{% url 'anipages:get_started' %}" class="btn btn-light">Get Started</a>
 				</div>
 				
 			</div>
