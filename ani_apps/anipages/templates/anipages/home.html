@@ -1,7 +1,7 @@
 {% extends "frontend/base.html" %}
 {% load static i18n %}
 {% block hero_in %}
-    <section id="hero">
+    <section id="hero" class="hero_section">
         <div class="intro_title">
             <h3 class="animated fadeInDown">{% trans "Affordable, Reliable Insurance for Your Peace of Mind." %}</h3>
             <p class="animated fadeInDown">{% trans "Protect what matters most with personalized insurance plans for health, home, and auto." %}</p>
@@ -10,158 +10,215 @@
     </section>
 {% endblock %} 
 {% block content %}
-  <div class="white_bg-7">
-      <div class="container margin_60">
-         <div class="row-box">
-            <div class="row">
-                <div class="col-sm-4 col-md-4">
-                    <div class="card bg-stv">
-                        <a>
-                            <img src="{% static 'frontend/img/vector-ty.svg' %}" alt="{% trans "svg" %}" class="img-fluid">
-                            <div class="mgt-text">
-                                <h3>Peace of Mind</h3>
-                                <p>With our comprehensive insurance plans, you can live worry-free knowing that your assets are fully protected.</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-sm-4 col-md-4">
-                    <div class="card bg-stv">
-                        <a>
-                            <img src="{% static 'frontend/img/vector-ty.svg' %}" alt="{% trans "svg" %}" class="img-fluid">
-                            <div class="mgt-text">
-                                <h3>Set For Life</h3>
-                                <p>Our tailored solutions ensure you’re prepared for whatever life throws your way. From unexpected events to long-term security.</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-sm-4 col-md-4">
-                    <div class="card mgt">
-                        <a>
-                            <img src="{% static 'frontend/img/vector-mgt.svg' %}" alt="{% trans "svg" %}" class="img-fluid">
-                            <div class="mgt-text">
-                                <h3>100% Satisfaction</h3>
-                                <p>Your trust is our priority. With a commitment to exceptional service and seamless claims processing, we guarantee your satisfaction.</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-         </div>
-        <div class="box-st">
-            <div class="row">
-                <div class="col-md-4">
-                    <h3>About us </h3>
-                    <p>america national insurance has been a trusted partner in providing tailored insurance solutions. Our mission is simple: to protect what matters most to you—your health, home, and vehicles.
-                      Backed by a dedicated team and a commitment to exceptional service, we ensure peace of mind at every step.</p>
-                    <div class="md-tg">
-                        <a href=""> Learn More About Us </a>
-                    </div>
-                </div>
-                    <div class="img-box">
-                        <div class="img-box-2">
-                            <img src="{% static 'frontend/img/ivg.png' %}" alt="{% trans "svg" %}" class="img-fluid">
-                            <img src="{% static 'frontend/img/ivgt.png' %}" alt="{% trans "svg" %}" class="img-fluid">
-                        </div>
-                        <div class="img-box-3">
-                            <img src="{% static 'frontend/img/mtgt.png' %}" alt="{% trans "svg" %}" class="img-fluid">    
-                        </div>
-                    </div>
-            </div>
-        </div>
-        <div class="mybox">
-            <h3>Services</h3>
-            <div class="row client_review_slider">
-                <div class="box b2">
-                    <img src="{% static 'frontend/img/b2.png' %}" alt="">
-                    <a href="">
-                        <img src="{% static 'frontend/img/66-voucher.svg' %}" alt="{% trans "svg" %}" class="img-fluid">
-                        <p>Car Insurance</p>
-                        <div class="text-w">
-                            Drive worry-free with our trusted plans.
-                        </div>
-                    </a>
-                </div>
-                <div class="box b3">
-                    <img src="{% static 'frontend/img/b3.png' %}" alt="">
-                    <a href="">
-                        <img src="{% static 'frontend/img/4-activity.svg' %}" alt="{% trans "svg" %}" class="img-fluid">
-                        <p>Home Insurance</p>
-                        <div class="text-w">
-                            Protect your home from the unexpected
-                        </div>
-                    </a>
-                </div>
-                <div class="box b4">
-                    <img src="{% static 'frontend/img/b4.png' %}" alt="">
-                    <a href="">
-                        <img src="{% static 'frontend/img/7-chart-oxy.svg' %}" alt="{% trans "svg" %}" class="img-fluid">
-                        <p>Health Insurance</p>
-                        <div class="text-w">
-                            Comprehensive coverage for your medical needs
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="section-box">
-            <div class="intro_sec">
-                <h3>Why choose our services for your guarantee insurance?</h3>
+    <div class="container custom-container">
+        <div class="white_bg-7">
+            <div class="row-box">
                 <div class="row">
-                    <div class="col-9">
-                        <img src="{% static 'frontend/img/check_list.svg' %}" alt="">
-                        <div class="text-wt">
-                            <h4>Tailored Solutions</h4>
+                    <div class="col-sm-4">
+                        <div class="special-card">
+                            <a>
+                                <div class="thumb">
+                                    <img src="{% static 'frontend/img/vector-ty.svg' %}" alt="{% trans "svg" %}" class="img-fluid">
+                                </div>
+                                <div class="mgt-text">
+                                    <h3>Peace of Mind</h3>
+                                    <p>With our comprehensive insurance plans, you can live worry-free knowing that your assets are fully protected.</p>
+                                </div>
+                            </a>
                         </div>
-                        <div class="tp">Our plans are customized to meet your unique needs, ensuring you get the exact coverage you require</div>
                     </div>
-                    <div class="col-9">
-                        <img src="{% static 'frontend/img/check_list.svg' %}" alt="">
-                        <div class="text-wt">
-                            <h4>Affordable Premiums</h4>
+                    <div class="col-sm-4">
+                        <div class="special-card">
+                            <a>
+                                <div class="thumb">
+                                    <img src="{% static 'frontend/img/vector-ty.svg' %}" alt="{% trans "svg" %}" class="img-fluid">
+                                </div>
+                                <div class="mgt-text">
+                                    <h3>Set For Life</h3>
+                                    <p>Our tailored solutions ensure you’re prepared for whatever life throws your way. From unexpected events to long-term security.</p>
+                                </div>
+                            </a>
                         </div>
-                        <div class="tpg">Enjoy comprehensive coverage at rates that fit your budget, without compromising on quality.</div>
                     </div>
-                    <div class="col-9">
-                        <img src="{% static 'frontend/img/check_list.svg' %}" alt="">
-                        <div class="text-wt">
-                            <h4>24/7 Accessibility</h4>
+                    <div class="col-sm-4">
+                        <div class="special-card distinct">
+                            <a>
+                                <div class="thumb">
+                                    <img src="{% static 'frontend/img/vector-mgt.svg' %}" alt="{% trans "svg" %}" class="img-fluid">
+                                </div>
+                                <div class="mgt-text">
+                                    <h3>100% Satisfaction</h3>
+                                    <p>Your trust is our priority. With a commitment to exceptional service and seamless claims processing, we guarantee your satisfaction.</p>
+                                </div>
+                            </a>
                         </div>
-                        <div class="tps">Access your policy information or reach out to us anytime, anywhere. </div>
                     </div>
                 </div>
+             </div>
+        </div>
+    </div>
 
+    <div class="container custom-container">
+        <div class="white_bg-7">
+            <div>
+                <div class="row">
+                    <div class="col-sm-5">
+                        <div class="about-section">
+                            <h3>About us </h3>
+                            <p>
+                                america national insurance has been a trusted partner in providing tailored insurance solutions. 
+                                Our mission is simple: to protect what matters most to you—your health, home, and vehicles.
+                                Backed by a dedicated team and a commitment to exceptional service, 
+                                we ensure peace of mind at every step.
+                            </p>
+                            <div class="abt_button d-flex align-items-center justify-content-center">
+                                <a href=""> Learn More About Us </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-7">
+                        <div class="image-boxes">
+                            <div class="image-box-1">
+                                <div class="image-1">
+                                    <img src="{% static 'frontend/img/ivg.png' %}" alt="{% trans "svg" %}" class="img-fluid">
+                                </div>
+                                <div class="image-2">
+                                    <img src="{% static 'frontend/img/ivgt.png' %}" alt="{% trans "svg" %}" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="image-box-2">
+                                <img src="{% static 'frontend/img/mtgt.png' %}" alt="{% trans "svg" %}" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>        
             </div>
         </div>
-        <div class="section-box-8">
-            <div class="row">
-                <div class="column">
-                    <div class="column-ch">
-                        <h2>Get a free consultation</h2>
-                        <p>Please fill out the form and experts will contact you shortly </p>
-                        <img src="{% static 'frontend/img/percent-box.svg' %}" alt="">
-                        <h3>76%</h3>
-                        <h6>of requests are resolved in favor of the client, if there is a request within 24 hours</h6>
+    </div>
+    <div class="container custom-container">
+        <div class="white_bg-7">
+            <div class="mybox">
+                <h3>Services</h3>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="box box-1 d-flex align-items-center justify-content-center">
+                            <div class="text-center">
+                                <a href="">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <img src="{% static 'frontend/img/66-voucher.svg' %}" alt="{% trans "svg" %}" class="img-fluid">
+                                    </div>
+                                    <p>Car Insurance</p>
+                                    <div class="text-w">
+                                        Drive worry-free with our trusted plans.
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="box box-2 d-flex align-items-center justify-content-center">
+                            <div class="text-center">
+                                <a href="">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <img src="{% static 'frontend/img/4-activity.svg' %}" alt="{% trans "svg" %}" class="img-fluid">
+                                    </div>
+                                    <p>Home Insurance</p>
+                                    <div class="text-w">
+                                        Protect your home from the unexpected
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="box box-3 d-flex align-items-center justify-content-center">
+                            <div class="text-center">
+                                <a href="">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <img src="{% static 'frontend/img/7-chart-oxy.svg' %}" alt="{% trans "svg" %}" class="img-fluid">
+                                    </div>
+                                    <p>Health Insurance</p>
+                                    <div class="text-w">
+                                        Comprehensive coverage for your medical needs
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="column">
-                    <form class="column-text-form" action="" >
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" placeholder="Name">
-                        <label for="name">phone:</label>
-                        <input type="tel" id="name" name="phone" placeholder="Phone">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" placeholder="Email">
-                        <button type="submit">Get a Quota now</button>
-                    </form>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container custom-container">
+        <div class="white_bg-7">
+            <div class="section-box">
+                <div class="intro_sec">
+                    <h3 class="mb-3 text-center text-white" >Why choose our services for your guarantee insurance?</h3>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="d-flex box">
+                                <div>
+                                    <img src="{% static 'frontend/img/check_list.svg' %}" alt="">
+                                </div>
+                                <div class="details">
+                                    <h4>Tailored Solutions</h4>
+                                    <p>Our plans are customized to meet your unique needs, ensuring you get the exact coverage you require</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="d-flex box">
+                                <div>
+                                    <img src="{% static 'frontend/img/check_list.svg' %}" alt="">
+                                </div>
+                                <div class="details">
+                                    <h4>Affordable Premiums</h4>
+                                    <p>Enjoy comprehensive coverage at rates that fit your budget, without compromising on quality.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="d-flex box">
+                                <div>
+                                    <img src="{% static 'frontend/img/check_list.svg' %}" alt="">
+                                </div>
+                                <div class="details">
+                                    <h4>24/7 Accessibility</h4>
+                                    <p>Access your policy information or reach out to us anytime, anywhere.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-
         </div>
-      </div>
-  </div>
-  
+    </div>
+    <div class="container custom-container">
+        <div class="white_bg-7">
+            <div class="section-box-20">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div>
+                            <h3>Get a free consultation</h3>
+                            <p>Please fill out the form and experts will contact you shortly </p>
+                            <img src="{% static 'frontend/img/percent-box.svg' %}" alt="">
+                            <div class="percent">76%</div>
+                            <h6>of requests are resolved in favor of the client, if there is a request within 24 hours</h6>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <form class="column-text-form" action="" >
+                            <input type="text" id="name" name="name" placeholder="Name">
+                            <input type="tel" id="name" name="phone" placeholder="Phone">
+                            <input type="email" id="email" name="email" placeholder="Email">
+                            <button type="submit">Get a Quota now</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}
 
 {% block extra_js %}
