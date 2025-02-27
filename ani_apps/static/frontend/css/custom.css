@@ -1518,4 +1518,99 @@ only screen and (min-device-pixel-ratio: 2) and (max-width: 768px) {
   margin-left: 30px;
   transform: translateY(-15px);
  }
+ #car_insurance_hero {
+	position: relative;
+	height: 600px;
+	background: #243A3F00 url(../img/heroin/car-insurance.png) no-repeat center center;
+	background-size: cover;
+	color: #fff;
+	width: 100%;
+	font-size: 16px;
+	display: table;
+	z-index: 99;
+	text-align: center;
+}
+.car_insurance{
+  padding-top: 30px;
+}
+.car_img_logo img{
+  width: 20px;
+  height: 20px;
+}
+.t-b{
+  color: #000;
+  margin-left: 5px;
+}
+.R-box-1{
+  margin-bottom: 7px;
+}
+.R-box-1 img{
+  border-radius: 8px;
+}
+.image-box-1 img{
+  border-radius: 8px;
+}
+.image-box-1{
+  gap: 7px;
+}
  
+
+@media(max-width: 768px){
+  #car_insurance_hero{
+    height: 400px;
+  }
+}
+#home_insurance_hero {
+	position: relative;
+	height: 600px;
+	background: #243A3F00 url(../img/home_ins.png) no-repeat center center;
+	background-size: cover;
+	color: #fff;
+	width: 100%;
+	font-size: 16px;
+	display: table;
+	z-index: 99;
+	text-align: center;
+}
+@media(max-width: 768px){
+  #home_insurance_hero{
+    height: 400px;
+  }
+}
+.image-box-2 img{
+  border-radius: 14px;
+}
+
+#health_insurance_hero{
+  position: relative;
+	height: 600px;
+	background: #243A3F url(../img/health_in.png) no-repeat center center;
+	background-size: cover;
+	color: #fff;
+	width: 100%;
+	font-size: 16px;
+	display: table;
+	z-index: 99;
+	text-align: center;
+}
+@media(max-width: 768px){
+  #health_insurance_hero{
+    height: 400px;
+  }
+}
+
+.submenu  ul li {
+  background-color: #3B5B5F;
+}
+.submenu  ul li a{
+  text-align: left;
+}
+.main-menu ul ul li a {
+  color: #fff;
+ 
+}
+@media(max-width: 768px){
+  .submenu  ul li {
+    background-color: #fff;
+  }
+}

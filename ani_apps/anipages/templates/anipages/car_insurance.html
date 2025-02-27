@@ -1,0 +1,101 @@
+{% extends "frontend/base.html" %}
+{% load static  i18n %}
+{% block hero_in %}
+    <section id="car_insurance_hero"  class="hero_section">
+        <div class="intro_title">
+            <h3 class="animated fadeInDown">{% trans "Drive with Peace of Mind" %}</h3>
+            <p class="animated fadeInDown">{% trans "Affordable plans to keep you and your car protected" %}</p>
+            <a class="animated fadeInUp button_intro outline" href="" class="animated fadeInUp button_intro" style="background-color: #243A3F; font-size: 10px;">{% trans "Get a car Insurance Quote" %}</a>
+		    </div>
+    </section>
+{% endblock %} 
+
+{% block content %}
+<div class="container custom-container car_insurance">
+    <div class="white_bg-7">
+        <div>
+            <div class="row">
+                <div class="col-sm-5">
+                    <div class="about-section">
+                        <h3>Coverage Highlights</h3>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="d-flex box">
+                                    <div class="car_img_logo">
+                                        <img src="{% static 'frontend/img/check_list.svg' %}" alt="">
+                                    </div>
+                                    <div class="details t-b">
+                                        <p>Collision coverage.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="d-flex box">
+                                    <div class="car_img_logo">
+                                        <img src="{% static 'frontend/img/check_list.svg' %}" alt="">
+                                    </div>
+                                    <div class="details t-b">
+                                        <p>Liability protection.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="d-flex box">
+                                    <div class="car_img_logo">
+                                        <img src="{% static 'frontend/img/check_list.svg' %}" alt="">
+                                    </div>
+                                    <div class="details t-b">
+                                        <p>Roadside assistance.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-7">
+                    <div class="image-boxes">
+                        <div class="image-box-2 R-box-1">
+                            <img src="{% static 'frontend/img/first_car_pic.png' %}" alt="{% trans "svg" %}" class="img-fluid">
+                        </div>
+                        <div class="image-box-1">
+                            <div class="image-1 R-box-2">
+                                <img src="{% static 'frontend/img/sec_car_pic.png' %}" alt="{% trans "svg" %}" class="img-fluid">
+                            </div>
+                            <div class="image-2 R-box-3">
+                                <img src="{% static 'frontend/img/third_car_pic.png' %}" alt="{% trans "svg" %}" class="img-fluid">
+                            </div>
+                        </div>
+                         
+                    </div>
+                </div>
+            </div>        
+        </div>
+    </div>
+</div>
+<div class="container custom-container">
+    <div class="white_bg-7">
+        <div class="section-box-20">
+            <div class="row">
+                <div class="col-sm-5">
+                    <div>
+                        <h3>Get a free consultation</h3>
+                        <p>Please fill out the form and experts will contact you shortly </p>
+                        <img src="{% static 'frontend/img/percent-box.svg' %}" alt="">
+                        <div class="percent">76%</div>
+                        <h6>of requests are resolved in favor of the client, if there is a request within 24 hours</h6>
+                    </div>
+                </div>
+                <div class="col-sm-7">
+                    <form class="column-text-form" action="" >
+                        <input type="text" id="name" name="name" placeholder="Name">
+                        <input type="tel" id="name" name="phone" placeholder="Phone">
+                        <input type="email" id="email" name="email" placeholder="Email">
+                        <button type="submit">Get a Quota now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+     
+{% endblock %}

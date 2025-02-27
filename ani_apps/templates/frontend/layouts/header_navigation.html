@@ -22,7 +22,12 @@
                             <a  href="{% url 'anipages:home' %}" class="show-submenu">{% trans "Home" %}</a>
                         </li>
                         <li class="submenu">
-                          <a href="{% url 'anipages:insurance' %}" class="show-submenu">{% trans "Insurance services" %}</a>
+                            <a href="javascript:void(0);" class="show-submenu">{% trans "Insurance services" %} <i class="icon-down-open-mini"></i></a>
+                            <ul>
+                                <li><a href="{% url 'anipages:car_insurance' %}">{% trans "Car Insurance" %}</a></li>
+                                <li><a href="{% url 'anipages:home_insurance' %}">{% trans "Home Insurance" %}</a></li>
+                                <li><a href="{% url 'anipages:health_insurance' %}">{% trans "Health Insurance" %}</a></li>
+                            </ul>
                         </li>
                         <li class="submenu">
                           <a href="{% url 'anipages:contacts' %}" class="show-submenu">{% trans "Contact" %}</a>
@@ -33,3 +38,6 @@
         </div>
     </div>
 </header>
+
+
+ 
